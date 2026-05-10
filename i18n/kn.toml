@@ -1,0 +1,116 @@
+[news]
+other = "ಸುದ್ದಿ"
+
+[articles]
+other = "ಲೇಖನಗಳು"
+
+[read_article]
+other = "ಲೇಖನ ಓದಿ →"
+
+[read_story]
+other = "ಸುದ್ದಿ ಓದಿ →"
+
+[view_all]
+other = "ಎಲ್ಲವನ್ನೂ ನೋಡಿ →"
+
+[updated]
+other = "ನವೀಕರಿಸಲಾಗಿದೆ"
+
+[min_read]
+other = "ನಿಮಿಷ ಓದು"
+
+[featured_article]
+other = "ವಿಶೇಷ ಲೇಖನ"
+
+[latest_news]
+other = "ತಾಜಾ ಸುದ್ದಿ"
+
+[more_news]
+other = "ಇನ್ನಷ್ಟು ಸುದ್ದಿ"
+
+[more_articles]
+other = "ಇನ್ನಷ್ಟು ಲೇಖನಗಳು"
+
+[lead_story]
+other = "ಮುಖ್ಯ ಸುದ್ದಿ"
+
+[no_news]
+other = "ಇನ್ನೂ ಸುದ್ದಿಗಳಿಲ್ಲ."
+
+[no_articles]
+other = "ಇನ್ನೂ ಲೇಖನಗಳಿಲ್ಲ."
+
+[tags]
+other = "ಟ್ಯಾಗ್‌ಗಳು"
+
+[tags_label]
+other = "ಟ್ಯಾಗ್‌ಗಳು:"
+
+[contents]
+other = "ವಿಷಯಸೂಚಿ"
+
+[prev]
+other = "← ಹಿಂದಿನದು"
+
+[next]
+other = "ಮುಂದಿನದು →"
+
+[search_title]
+other = "ಹುಡುಕಿ"
+
+[search_placeholder]
+other = "ಲೇಖನ, ಸುದ್ದಿ ಹುಡುಕಿ…"
+
+[search_no_results]
+other = "ಯಾವ ಫಲಿತಾಂಶಗಳೂ ಇಲ್ಲ"
+
+[search_enter_term]
+other = "ಮೇಲೆ ಹುಡುಕಾಟದ ಪದ ನಮೂದಿಸಿ."
+
+[search_unavailable]
+other = "ಹುಡುಕಾಟ ಲಭ್ಯವಿಲ್ಲ. ದಯವಿಟ್ಟು ಮತ್ತೆ ಪ್ರಯತ್ನಿಸಿ."
+
+[share]
+other = "ಹಂಚಿಕೊಳ್ಳಿ"
+
+[footer_twitter]
+other = "X"
+
+[footer_github]
+other = "GitHub"
+
+[also_this_month]
+other = "ಈ ತಿಂಗಳು ಇನ್ನಷ್ಟು"
+
+[month_filter_label]
+other = "ತಿಂಗಳಿನ ಮೂಲಕ ಹುಡುಕಿ"
+
+[older_months]
+other = "← ಹಿಂದಿನ"
+
+[newer_months]
+other = "ಮುಂದಿನ →"
+
+[priority_primary]
+other = "ಮುಖ್ಯ"
+
+[priority_secondary]
+other = "ದ್ವಿತೀಯ"
+
+[not_found_title]
+other = "ಪುಟ ಸಿಗಲಿಲ್ಲ"
+
+[not_found_message]
+other = "ನೀವು ಹುಡುಕುತ್ತಿರುವ ಪುಟ ಲಭ್ಯವಿಲ್ಲ ಅಥವಾ ಸ್ಥಳಾಂತರಿಸಲಾಗಿದೆ."
+
+[go_home]
+other = "ಮುಖಪುಟಕ್ಕೆ ಹೋಗಿ"
+
+[skip_to_content]
+other = "ಮುಖ್ಯ ವಿಷಯಕ್ಕೆ ಹೋಗಿ"
+
+[search_result_for]
+other = "ಫಲಿತಾಂಶ"
+
+[search_results_for]
+other = "ಫಲಿತಾಂಶಗಳು"

@@ -1,0 +1,359 @@
+backend:
+  name: github
+  repo: anand-raj/cms-hugo-sveltia-theme1
+  branch: main
+  base_url: https://sveltia-cms-auth.e-anandraj.workers.dev
+
+# Store media in the page bundle alongside content
+media_folder: content/en/articles
+public_folder: /articles
+
+site_url: https://anand-raj.github.io/cms-hugo-sveltia-theme1/
+
+collections:
+  - name: articles
+    label: Articles (EN)
+    folder: content/en/articles
+    create: true
+    path: "{{slug}}/index"
+    media_folder: images
+    public_folder: images
+    preview_path: articles/{{slug}}/
+    fields:
+      - &f_title
+        label: Title
+        name: title
+        widget: string
+
+      - &f_date
+        label: Publish Date
+        name: date
+        widget: datetime
+        format: "YYYY-MM-DDTHH:mm:ssZ"
+
+      - &f_lastmod
+        label: Last Modified
+        name: lastmod
+        widget: datetime
+        format: "YYYY-MM-DDTHH:mm:ssZ"
+
+      - &f_draft
+        label: Draft
+        name: draft
+        widget: boolean
+        default: true
+
+      - &f_desc
+        label: Description
+        name: description
+        widget: text
+        required: false
+
+      - &f_author
+        label: Author
+        name: author
+        widget: string
+        default: Admin
+
+      - label: Categories
+        name: categories
+        widget: list
+        default: ["Tech"]
+
+      - &f_tags
+        label: Tags
+        name: tags
+        widget: list
+        required: false
+
+      - label: Hero Image
+        name: image
+        widget: image
+        required: false
+        choose_url: true
+        media_libraries:
+          default: false
+        hint: "Paste an image URL (e.g. https://images.unsplash.com/photo-ID?w=1200&fm=webp&q=80)"
+
+      - label: Image Caption
+        name: image_caption
+        widget: string
+        required: false
+        hint: "e.g. Photo by [Name](https://unsplash.com/@handle) on [Unsplash](https://unsplash.com)"
+
+      - &f_slider
+        label: Show in Home Slider
+        name: show_in_slider
+        widget: boolean
+        default: false
+        hint: "Mark this post to appear in the home page hero slider"
+
+      - &f_priority
+        label: Priority
+        name: priority
+        widget: select
+        options: [primary, secondary, tertiary]
+        required: false
+        hint: "Controls layout in the articles list: primary = full-width hero, secondary = card grid, tertiary = compact list"
+
+      - &f_toc
+        label: Table of Contents
+        name: toc
+        widget: boolean
+        default: true
+
+      - label: Comments
+        name: comments
+        widget: boolean
+        default: true
+
+      - &f_body
+        label: Body
+        name: body
+        widget: markdown
+
+  - name: news
+    label: News (EN)
+    folder: content/en/news
+    create: true
+    path: "{{slug}}/index"
+    media_folder: images
+    public_folder: images
+    preview_path: news/{{slug}}/
+    fields:
+      - *f_title
+      - *f_date
+      - *f_lastmod
+      - *f_draft
+      - *f_desc
+      - *f_author
+      - label: Categories
+        name: categories
+        widget: list
+        default: ["News"]
+      - *f_tags
+      - label: Hero Image
+        name: image
+        widget: image
+        required: false
+        choose_url: true
+        media_libraries:
+          default: false
+        hint: "Paste an image URL (e.g. https://images.unsplash.com/photo-ID?w=1200&fm=webp&q=80)"
+      - *f_slider
+      - *f_body
+
+  - name: articles_kn
+    label: Articles (KN - ಕನ್ನಡ)
+    folder: content/kn/articles
+    create: true
+    path: "{{slug}}/index"
+    media_folder: images
+    public_folder: images
+    preview_path: kn/articles/{{slug}}/
+    fields:
+      - *f_title
+      - *f_date
+      - *f_lastmod
+      - *f_draft
+      - *f_desc
+      - *f_author
+      - label: Categories
+        name: categories
+        widget: list
+        default: ["Tech"]
+      - *f_tags
+      - label: Hero Image
+        name: image
+        widget: image
+        required: false
+        choose_url: true
+        media_libraries:
+          default: false
+        hint: "Paste an image URL (e.g. https://images.unsplash.com/photo-ID?w=1200&fm=webp&q=80)"
+      - *f_slider
+      - *f_priority
+      - *f_toc
+      - *f_body
+
+  - name: news_kn
+    label: News (KN - ಕನ್ನಡ)
+    folder: content/kn/news
+    create: true
+    path: "{{slug}}/index"
+    media_folder: images
+    public_folder: images
+    preview_path: kn/news/{{slug}}/
+    fields:
+      - *f_title
+      - *f_date
+      - *f_lastmod
+      - *f_draft
+      - *f_desc
+      - *f_author
+      - label: Categories
+        name: categories
+        widget: list
+        default: ["ಸುದ್ದಿ"]
+      - *f_tags
+      - label: Hero Image
+        name: image
+        widget: image
+        required: false
+        choose_url: true
+        media_libraries:
+          default: false
+        hint: "Paste an image URL (e.g. https://images.unsplash.com/photo-ID?w=1200&fm=webp&q=80)"
+      - *f_slider
+      - *f_body
+
+  - name: settings
+    label: Site Settings
+    files:
+      - name: general
+        label: General Settings
+        file: data/settings.yml
+        fields:
+          # ── Display: Articles ─────────────────────────────────────────────
+          - label: "[Articles] Show Categories"
+            name: articles_show_categories
+            widget: boolean
+            default: true
+          - label: "[Articles] Show Tags"
+            name: articles_show_tags
+            widget: boolean
+            default: true
+          - label: "[Articles] Show Author"
+            name: articles_show_author
+            widget: boolean
+            default: true
+          - label: "[Articles] Show Date"
+            name: articles_show_date
+            widget: boolean
+            default: true
+          - label: "[Articles] Show Updated Date"
+            name: articles_show_updated
+            widget: boolean
+            default: true
+          - label: "[Articles] Show Read Time"
+            name: articles_show_read_time
+            widget: boolean
+            default: true
+          - label: "[Articles] Show Hero Image"
+            name: articles_show_hero_image
+            widget: boolean
+            default: true
+          - label: "[Articles] Show Description"
+            name: articles_show_description
+            widget: boolean
+            default: true
+          - label: "[Articles] Show Prev / Next"
+            name: articles_show_prev_next
+            widget: boolean
+            default: true
+
+          # ── Display: News ─────────────────────────────────────────────────
+          - label: "[News] Show Categories"
+            name: news_show_categories
+            widget: boolean
+            default: true
+          - label: "[News] Show Tags"
+            name: news_show_tags
+            widget: boolean
+            default: false
+          - label: "[News] Show Author"
+            name: news_show_author
+            widget: boolean
+            default: true
+          - label: "[News] Show Date"
+            name: news_show_date
+            widget: boolean
+            default: true
+          - label: "[News] Show Updated Date"
+            name: news_show_updated
+            widget: boolean
+            default: false
+          - label: "[News] Show Hero Image"
+            name: news_show_hero_image
+            widget: boolean
+            default: true
+          - label: "[News] Show Description"
+            name: news_show_description
+            widget: boolean
+            default: true
+          - label: "[News] Show Prev / Next"
+            name: news_show_prev_next
+            widget: boolean
+            default: true
+          - label: "[News] List Page Size"
+            name: news_list_page_size
+            widget: number
+            default: 20
+            hint: "Max news items shown per page"
+
+          # ── Navigation ───────────────────────────────────────────────────
+          - label: "Show Language Switcher"
+            name: show_language_switcher
+            widget: boolean
+            default: true
+            hint: "Show the language switcher in the mobile menu"
+
+          # ── Fonts ─────────────────────────────────────────────────────────
+          - label: Body Font
+            name: body_font
+            widget: string
+            default: "Inter"
+            hint: "Any Google Fonts family name — e.g. Inter, Lato, Merriweather"
+          - label: Heading Font
+            name: heading_font
+            widget: string
+            default: "Inter"
+            hint: "Any Google Fonts family name — e.g. Playfair Display, Raleway"
+          - label: Kannada Body Font
+            name: kannada_body_font
+            widget: string
+            default: "Baloo Tamma 2"
+            hint: "Google Fonts family for Kannada body/paragraph text — e.g. Baloo Tamma 2, Noto Sans Kannada"
+          - label: Kannada Heading Font
+            name: kannada_heading_font
+            widget: string
+            default: "Baloo Tamma 2"
+            hint: "Google Fonts family for Kannada headings — e.g. Baloo Tamma 2, Noto Serif Kannada"
+
+          # ── Colours ───────────────────────────────────────────────────────
+          - label: Primary (header, headings)
+            name: color_primary
+            widget: color
+            default: "#1e293b"
+          - label: Accent (links, buttons, badges)
+            name: color_accent
+            widget: color
+            default: "#f59e0b"
+          - label: Body Text
+            name: color_text
+            widget: color
+            default: "#334155"
+          - label: Page Background
+            name: color_bg
+            widget: color
+            default: "#fafaf9"
+          - label: Surface (cards, hero, code bg)
+            name: color_surface
+            widget: color
+            default: "#f1f5f9"
+          - label: Border / Divider
+            name: color_border
+            widget: color
+            default: "#e2e8f0"
+          - label: Muted Text (descriptions, secondary)
+            name: color_muted
+            widget: color
+            default: "#64748b"
+          - label: Subtle Text (labels, bylines)
+            name: color_subtle
+            widget: color
+            default: "#94a3b8"
+          - label: Code Block Background
+            name: color_pre_bg
+            widget: color
+            default: "#1e293b"
