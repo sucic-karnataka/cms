@@ -1,8 +1,8 @@
 ---
-title: Cloudfare Workers
+title: How Cloudfare Workers work?
 date: 2026-04-07T18:24:00+05:30
-lastmod: 2026-04-07T18:24:00+05:30
-draft: true
+lastmod: 2026-05-11T00:49:00+05:30
+draft: false
 description: ''
 author: Admin
 categories:
@@ -10,6 +10,7 @@ categories:
 tags: []
 image: https://picsum.photos/id/144/1920/1280.webp
 image_caption: ''
+priority: secondary
 toc: true
 comments: true
 ---
