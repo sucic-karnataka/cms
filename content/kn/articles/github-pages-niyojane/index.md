@@ -1,15 +1,22 @@
 ---
-title: "GitHub Pages ಮೂಲಕ ನಿಮ್ಮ Hugo ಸೈಟ್ ಅನ್ನು ಉಚಿತವಾಗಿ ನಿಯೋಜಿಸಿ"
+title: GitHub Pages ಮೂಲಕ ನಿಮ್ಮ Hugo ಸೈಟ್ ಅನ್ನು ಉಚಿತವಾಗಿ ನಿಯೋಜಿಸಿ
 date: 2026-04-15T09:30:00+05:30
 lastmod: 2026-04-15T09:30:00+05:30
 draft: false
-description: "GitHub Pages ಮತ್ತು GitHub Actions ಬಳಸಿ Hugo ವೆಬ್‌ಸೈಟ್ ಅನ್ನು ಉಚಿತವಾಗಿ ಇಂಟರ್ನೆಟ್‌ಗೆ ಪ್ರಕಾಶಿಸುವ ಸಂಪೂರ್ಣ ಮಾರ್ಗದರ್ಶಿ."
-author: "ಸಂಪಾದಕ"
-categories: ["ತಂತ್ರಜ್ಞಾನ"]
-tags: ["hugo", "github-pages", "github-actions", "deployment", "git"]
+description: GitHub Pages ಮತ್ತು GitHub Actions ಬಳಸಿ Hugo ವೆಬ್‌ಸೈಟ್ ಅನ್ನು ಉಚಿತವಾಗಿ ಇಂಟರ್ನೆಟ್‌ಗೆ ಪ್ರಕಾಶಿಸುವ ಸಂಪೂರ್ಣ ಮಾರ್ಗದರ್ಶಿ.
+author: ಸಂಪಾದಕ
+categories:
+  - ತಂತ್ರಜ್ಞಾನ
+tags:
+  - hugo
+  - github-pages
+  - github-actions
+  - deployment
+  - git
+image: https://pub-9e8dfdab94894b3586fae2b60190fd52.r2.dev/2026/05/DSC_3376-01.jpg
+priority: tertiary
 toc: true
 comments: true
-priority: "tertiary"
 ---
 
 Hugo ಮೂಲಕ ನಿರ್ಮಿಸಿದ ವೆಬ್‌ಸೈಟ್ ಅನ್ನು GitHub Pages ಬಳಸಿ ಉಚಿತವಾಗಿ ಲೈವ್ ಮಾಡಬಹುದು. GitHub Actions ಮೂಲಕ ಸ್ವಯಂಚಾಲಿತ ನಿಯೋಜನೆ ಸಾಧ್ಯ — ಪ್ರತಿ ಬಾರಿ ನೀವು ಬದಲಾವಣೆ ಪ್ರಕಾಶಿಸಿದಾಗ ಸೈಟ್ ತಾನಾಗಿ ಅಪ್‌ಡೇಟ್ ಆಗುತ್ತದೆ.
