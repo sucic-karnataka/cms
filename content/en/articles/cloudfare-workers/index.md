@@ -10,7 +10,7 @@ categories:
 tags: []
 image: https://picsum.photos/id/144/1920/1280.webp
 image_caption: ''
-priority: primary
+priority: secondary
 toc: true
 comments: true
 ---
