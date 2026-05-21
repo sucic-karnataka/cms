@@ -2041,6 +2041,7 @@ img {
 
   .month-primary-img {
     display: block;
+    height: 360px;
     overflow: hidden;
     img {
       width: 100%;
@@ -2075,6 +2076,7 @@ img {
 
   @media (max-width: 860px) {
     grid-template-columns: 1fr;
+    .month-primary-img { height: 220px; }
     .month-primary-body { padding: 1.25rem; }
   }
 }

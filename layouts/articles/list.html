@@ -26,12 +26,33 @@
 
   {{/* ── Month groups ─────────────────────────────────────────────────────── */}}
   {{ range $i, $group := $grouped }}
-  {{ $primary   := where $group.Pages "Params.priority" "primary" }}
-  {{ $secondary := where $group.Pages "Params.priority" "secondary" }}
-  {{ $tertiary  := where $group.Pages "Params.priority" "tertiary" }}
-  {{/* Fallback: if no primary set, promote the first article */}}
+  {{ $pages := $group.Pages.ByLastmod.Reverse }}
+  {{ $primary := "" }}
+  {{ range $pages }}
+    {{ if and (not $primary) (eq .Params.priority "primary") }}
+      {{ $primary = . }}
+    {{ end }}
+  {{ end }}
   {{ if not $primary }}
-    {{ $primary = first 1 $group.Pages }}
+    {{ $primary = index $pages 0 }}
+  {{ end }}
+
+  {{ $remaining := slice }}
+  {{ range $pages }}
+    {{ if ne .RelPermalink $primary.RelPermalink }}
+      {{ $remaining = $remaining | append . }}
+    {{ end }}
+  {{ end }}
+
+  {{ $secondary := slice }}
+  {{ $tertiary := slice }}
+  {{ range $remaining }}
+    {{ $priority := .Params.priority | default "" }}
+    {{ if and (lt (len $secondary) 4) (or (eq $priority "primary") (eq $priority "secondary")) }}
+      {{ $secondary = $secondary | append . }}
+    {{ else }}
+      {{ $tertiary = $tertiary | append . }}
+    {{ end }}
   {{ end }}
 
   <section class="month-group{{ if ge $i $showCount }} month-group--hidden{{ end }}"
@@ -43,7 +64,7 @@
     </div>
 
     {{/* ── Primary articles — each gets its own full-width hero row ────── */}}
-    {{ range $primary }}
+    {{ with $primary }}
     {{ $article := . }}
     <div class="month-primary">
       {{ with .Params.image }}
