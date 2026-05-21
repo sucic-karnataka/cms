@@ -17,8 +17,12 @@
     <div class="hero-slider-track" id="heroTrack">
       {{ range $i, $p := $sliderItems }}
       <div class="hero-slide{{ if eq $i 0 }} is-active{{ end }}"
-           data-index="{{ $i }}"
-           {{ with $p.Params.image }}style="--slide-bg: url('{{ . }}')"{{ end }}>
+           data-index="{{ $i }}">
+        {{ with $p.Params.image }}
+          <div class="hero-slide-media">
+            {{ partial "post-image.html" (dict "page" $p "src" . "width" "1600" "alt" $p.Title "loading" "eager") }}
+          </div>
+        {{ end }}
         <div class="hero-slide-overlay"></div>
         <div class="hero-slide-content">
           <span class="hero-slide-chip">{{ i18n $p.Section | default ($p.Section | title) }}</span>
