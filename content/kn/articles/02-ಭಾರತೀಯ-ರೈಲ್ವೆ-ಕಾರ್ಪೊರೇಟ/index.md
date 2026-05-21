@@ -1,7 +1,7 @@
 ---
 title: 'ಭಾರತೀಯ ರೈಲ್ವೆ: ಕಾರ್ಪೊರೇಟ್ ಲೂಟಿಯ ಬಲಿಪಶು!'
 date: 2026-04-21T19:05:00+05:30
-lastmod: 2026-05-05T11:20:00+05:30
+lastmod: 2026-04-05T11:20:00+05:30
 draft: false
 description: 'ಭಾರತೀಯ ರೈಲ್ವೆ: ಕಾರ್ಪೊರೇಟ್ ಲೂಟಿಯ ಬಲಿಪಶು! ಕೆಲಸ ಹುಡುಕುತ್ತ ದೊಡ್ಡ ನಗರಕ್ಕೆ ತೆರಳುವ ವಲಸೆ ಕಾರ್ಮಿಕ, ತನ್ನ ಕಷ್ಟಾರ್ಜಿತ ಉಳಿತಾಯದೊಂದಿಗೆ ತೀರ್ಥಯಾತ್ರೆಗೆ ಸಜ್ಜಾದ ಒಬ್ಬ ವಯಸ್ಸಾದ ಭಕ್ತ,...'
 author: SUCIC Karnataka
@@ -10,7 +10,7 @@ categories:
 tags: []
 image: https://pub-9e8dfdab94894b3586fae2b60190fd52.r2.dev/2026/05/WhatsApp-Image-2026-04-28-at-3.34.37-PM.jpeg
 priority: secondary
-toc: true
+toc: false
 comments: false
 ---
 

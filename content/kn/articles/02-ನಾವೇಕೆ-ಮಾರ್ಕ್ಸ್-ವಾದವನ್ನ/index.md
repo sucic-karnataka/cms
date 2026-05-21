@@ -1,7 +1,7 @@
 ---
 title: ನಾವೇಕೆ ಮಾರ್ಕ್ಸ್ ವಾದವನ್ನು ಕಲಿಯಬೇಕು
 date: 2026-04-05T10:35:00+05:30
-lastmod: 2026-05-05T11:04:00+05:30
+lastmod: 2026-04-05T11:04:00+05:30
 draft: false
 description: ನಾವೇಕೆ ಮಾರ್ಕ್ಸ್ ವಾದವನ್ನು ಕಲಿಯಬೇಕು ನಾವು ಯಾವುದೇ ತತ್ವ ಅಥವಾ ಸಿದ್ಧಾಂತಗಳಿಗೆ ಅಂಟಿಕೊಳ್ಳುವುದಿಲ್ಲ ಎಂಬ ಅಪ್ಪಟ ಬುದ್ಧಿಜೀವಿಗಳ ಒಂದು ವಾದವಿದೆ. ಆದರೆ ಅದು ವಾಸ್ತವವೇ? ಹಾಗಿರಲು ಸಾಧ್ಯವೇ?...
 author: SUCIC Karnataka
@@ -11,7 +11,7 @@ tags: []
 image: https://pub-9e8dfdab94894b3586fae2b60190fd52.r2.dev/2026/05/WhatsApp-Image-2026-04-28-at-3.32.49-PM-200x300.jpeg
 image_fit: contain
 priority: primary
-toc: true
+toc: false
 comments: false
 ---
 

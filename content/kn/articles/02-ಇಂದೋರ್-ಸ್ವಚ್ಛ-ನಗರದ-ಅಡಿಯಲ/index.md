@@ -1,7 +1,7 @@
 ---
 title: "ಇಂದೋರ್ : `ಸ್ವಚ್ಛ ನಗರ'ದ ಅಡಿಯಲ್ಲಿ ಪ್ರಾಣಾಂತಿಕ ‘ಜಲ’ಧಾರೆ!"
 date: 2026-04-05T10:43:00+05:30
-lastmod: 2026-05-05T11:22:00+05:30
+lastmod: 2026-04-05T11:22:00+05:30
 draft: false
 description: 'ಇಂದೋರ್ : `ಸ್ವಚ್ಛ ನಗರ’ದ ಅಡಿಯಲ್ಲಿ ಪ್ರಾಣಾಂತಿಕ ‘ಜಲ’ಧಾರೆ! ಮಧ್ಯಪ್ರದೇಶದ ಇಂದೋರ್‌ನ ಭಾರತದ ಅತ್ಯಂತ `ಸ್ವಚ್ಛ ನಗರ’ ಎಂಬ ಖ್ಯಾತಿ, ಇತ್ತೀಚೆಗೆ ಹದಗೆಟ್ಟ ಸಾರ್ವಜನಿಕ ಆರೋಗ್ಯ ವ್ಯವಸ್ಥೆಯಿಂದ...'
 author: SUCIC Karnataka
@@ -10,7 +10,7 @@ categories:
 tags: []
 image: https://pub-9e8dfdab94894b3586fae2b60190fd52.r2.dev/2026/05/WhatsApp-Image-2026-04-28-at-3.34.10-PM.jpeg
 priority: secondary
-toc: true
+toc: false
 comments: false
 ---
 

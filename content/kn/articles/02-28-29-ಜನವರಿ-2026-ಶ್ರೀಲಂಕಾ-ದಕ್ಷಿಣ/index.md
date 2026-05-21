@@ -1,7 +1,7 @@
 ---
 title: '28-29, ಜನವರಿ, 2026: ಶ್ರೀಲಂಕಾ: ದಕ್ಷಿಣ ಏಷ್ಯಾ ಎಡಪಂಥೀಯ ವಿದ್ಯಾರ್ಥಿಗಳ ಯಶಸ್ವಿ ಸಮಾವೇಶ ಐಕ್ಯ ಹೋರಾಟದ ಸಂಕಲ್ಪ!'
 date: 2026-04-05T10:57:00+05:30
-lastmod: 2026-05-05T11:00:00+05:30
+lastmod: 2026-04-05T11:00:00+05:30
 draft: false
 description: '28-29, ಜನವರಿ, 2026: ಶ್ರೀಲಂಕಾ: ದಕ್ಷಿಣ ಏಷ್ಯಾ ಎಡಪಂಥೀಯ ವಿದ್ಯಾರ್ಥಿಗಳ ಯಶಸ್ವಿ ಸಮಾವೇಶ ಐಕ್ಯ ಹೋರಾಟದ ಸಂಕಲ್ಪ! ಕಳೆದ ಜನವರಿ 28 ರಿಂದ 30 ರವರೆಗೆ ಶ್ರೀಲಂಕಾದ ಕೊಲೊಂಬೊದಲ್ಲಿ AIDSO...'
 author: SUCIC Karnataka
@@ -10,7 +10,7 @@ categories:
 tags: []
 image: https://pub-9e8dfdab94894b3586fae2b60190fd52.r2.dev/2026/05/WhatsApp-Image-2026-04-28-at-3.30.30-PM-1024x576.jpeg
 priority: secondary
-toc: true
+toc: false
 comments: false
 ---
 
