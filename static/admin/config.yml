@@ -207,6 +207,39 @@ collections:
       - *f_slider
       - *f_body
 
+  - name: pages
+    label: Pages
+    files:
+      - name: about_en
+        label: About (EN)
+        file: content/en/about.md
+        preview_path: en/about/
+        fields:
+          - *f_title
+          - *f_date
+          - *f_draft
+          - *f_desc
+          - label: Layout
+            name: layout
+            widget: hidden
+            default: about
+          - *f_body
+
+      - name: about_kn
+        label: About (KN - ಕನ್ನಡ)
+        file: content/kn/about.md
+        preview_path: about/
+        fields:
+          - *f_title
+          - *f_date
+          - *f_draft
+          - *f_desc
+          - label: Layout
+            name: layout
+            widget: hidden
+            default: about
+          - *f_body
+
   - name: settings
     label: Site Settings
     files:
