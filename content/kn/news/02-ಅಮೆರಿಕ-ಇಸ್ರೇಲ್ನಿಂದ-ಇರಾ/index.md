@@ -1,15 +1,15 @@
 ---
-title: "ಅಮೆರಿಕ-ಇಸ್ರೇಲ್‌ನಿಂದ ಇರಾನ್ ಮೇಲೆ ಯುದ್ಧ: ಅಮಾಯಕರ ಕಗ್ಗೊಲೆ"
-date: "2026-05-05T11:05:57+05:30"
-lastmod: "2026-05-05T11:14:41+05:30"
+title: 'ಅಮೆರಿಕ-ಇಸ್ರೇಲ್‌ನಿಂದ ಇರಾನ್ ಮೇಲೆ ಯುದ್ಧ: ಅಮಾಯಕರ ಕಗ್ಗೊಲೆ'
+date: 2026-05-05T11:05:00+05:30
+lastmod: 2026-05-05T11:14:00+05:30
 draft: false
-description: "ಅಮೆರಿಕ-ಇಸ್ರೇಲ್‌ನಿಂದ ಇರಾನ್ ಮೇಲೆ ಯುದ್ಧ: ಅಮಾಯಕರ ಕಗ್ಗೊಲೆ ಇತ್ತೀಚೆಗೆ ಅಮೆರಿಕ ಮತ್ತು ಇಸ್ರೇಲ್ ಜಂಟಿಯಾಗಿ ಇರಾನ್ ಮೇಲೆ ನಡೆಸಿದ ಬೃಹತ್ ಮಿಲಿಟರಿ ದಾಳಿಯು ವಿಶ್ವಶಾಂತಿಗೆ ಗಂಭೀರ..."
-author: ""
+description: 'ಅಮೆರಿಕ-ಇಸ್ರೇಲ್‌ನಿಂದ ಇರಾನ್ ಮೇಲೆ ಯುದ್ಧ: ಅಮಾಯಕರ ಕಗ್ಗೊಲೆ ಇತ್ತೀಚೆಗೆ ಅಮೆರಿಕ ಮತ್ತು ಇಸ್ರೇಲ್ ಜಂಟಿಯಾಗಿ ಇರಾನ್ ಮೇಲೆ ನಡೆಸಿದ ಬೃಹತ್ ಮಿಲಿಟರಿ ದಾಳಿಯು ವಿಶ್ವಶಾಂತಿಗೆ ಗಂಭೀರ...'
+author: sucic karnataka
 categories:
-  - "ಸುದ್ದಿ"
+  - ಸುದ್ದಿ
 tags: []
-image: "https://pub-9e8dfdab94894b3586fae2b60190fd52.r2.dev/2026/05/WhatsApp-Image-2026-04-28-at-3.35.04-PM-1024x682.jpeg"
-extra_font: "https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;700&display=swap"
+image: https://pub-9e8dfdab94894b3586fae2b60190fd52.r2.dev/2026/05/WhatsApp-Image-2026-04-28-at-3.35.04-PM-1024x682.jpeg
+extra_font: https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600;700&display=swap
 ---
 
 <style>
@@ -17,8 +17,6 @@ extra_font: "https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;600
   font-family: 'Baloo Tamma 2', system-ui, sans-serif;
 }
 </style>
-
-![](https://pub-9e8dfdab94894b3586fae2b60190fd52.r2.dev/2026/05/WhatsApp-Image-2026-04-28-at-3.35.04-PM-1024x682.jpeg)
 
 ![](https://pub-9e8dfdab94894b3586fae2b60190fd52.r2.dev/2026/05/WhatsApp-Image-2026-04-28-at-3.35.04-PM-1-1024x630.jpeg)
 
