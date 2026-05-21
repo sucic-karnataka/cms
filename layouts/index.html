@@ -3,6 +3,19 @@
 
 {{ $allNews     := (where site.RegularPages "Section" "news").ByLastmod.Reverse }}
 {{ $allArticles := (where site.RegularPages "Section" "articles").ByLastmod.Reverse }}
+{{ $articleGroups := $allArticles.GroupByLastmod "January 2006" }}
+{{ $featuredArticle := "" }}
+{{ with index $articleGroups 0 }}
+  {{ $latestMonthArticles := .Pages.ByLastmod.Reverse }}
+  {{ range $latestMonthArticles }}
+    {{ if and (not $featuredArticle) (eq .Params.priority "primary") }}
+      {{ $featuredArticle = . }}
+    {{ end }}
+  {{ end }}
+  {{ if not $featuredArticle }}
+    {{ $featuredArticle = index $latestMonthArticles 0 }}
+  {{ end }}
+{{ end }}
 
 {{/* ── Hero Slider: marked items first, fallback to latest ───────────────── */}}
 {{ $markedNews     := where $allNews "Params.show_in_slider" true }}
@@ -59,7 +72,7 @@
   <div class="home-body">
 
     {{/* ── Featured Article ────────────────────────────────────────────────── */}}
-    {{ with index $allArticles 0 }}
+    {{ with $featuredArticle }}
     {{ $featured := . }}
     <div class="featured-post">
       {{ with $featured.Params.image }}
