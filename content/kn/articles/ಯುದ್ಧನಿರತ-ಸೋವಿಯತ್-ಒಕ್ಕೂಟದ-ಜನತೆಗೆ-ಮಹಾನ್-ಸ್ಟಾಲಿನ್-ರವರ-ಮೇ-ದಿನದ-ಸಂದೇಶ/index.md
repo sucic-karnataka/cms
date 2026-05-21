@@ -9,7 +9,7 @@ categories:
   - Tech
 tags: []
 image: https://pub-9e8dfdab94894b3586fae2b60190fd52.r2.dev/2026/05/IMG-20260521-WA0029.jpg
-image_fit: auto
+image_fit: contain
 image_position: center
 show_in_slider: true
 priority: primary
