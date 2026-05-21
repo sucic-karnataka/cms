@@ -2,7 +2,7 @@
 title: ಯುದ್ಧನಿರತ ಸೋವಿಯತ್ ಒಕ್ಕೂಟದ ಜನತೆಗೆ ಮಹಾನ್ ಸ್ಟಾಲಿನ್‌ರವರ ಮೇ ದಿನದ ಸಂದೇಶ
 date: 2026-05-21T21:12:00+05:30
 lastmod: 2026-05-21T21:12:00+05:30
-draft: true
+draft: false
 description: ''
 author: Admin
 categories:
