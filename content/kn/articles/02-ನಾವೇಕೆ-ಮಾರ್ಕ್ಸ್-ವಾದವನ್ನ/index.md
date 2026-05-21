@@ -9,6 +9,7 @@ categories:
   - Tech
 tags: []
 image: https://pub-9e8dfdab94894b3586fae2b60190fd52.r2.dev/2026/05/WhatsApp-Image-2026-04-28-at-3.32.49-PM-200x300.jpeg
+image_fit: contain
 priority: primary
 toc: true
 comments: false
