@@ -2,7 +2,7 @@
 title: Test By VS
 date: 2026-05-31T13:53:00+05:30
 lastmod: 2026-05-31T13:53:00+05:30
-draft: true
+draft: false
 description: this is test image i have uploaded for trial purpose
 author: VS
 categories:
