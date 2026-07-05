@@ -12,7 +12,7 @@ tags: []
 image: https://pub-9e8dfdab94894b3586fae2b60190fd52.r2.dev/2026/07/729716830_980630701345892_1645119910831270854_n.jpeg
 image_fit: auto
 image_position: center
-show_in_slider: false
+show_in_slider: true
 priority: primary
 toc: true
 ---
