@@ -10,9 +10,9 @@ categories:
   - ಸುದ್ದಿ
 tags: []
 image: https://pub-9e8dfdab94894b3586fae2b60190fd52.r2.dev/2026/06/P1.jpg
-image_fit: ''
+image_fit: auto
 image_position: center
-show_in_slider: false
+show_in_slider: true
 ---
 
 ![](https://pub-9e8dfdab94894b3586fae2b60190fd52.r2.dev/2026/06/P2.jpg)
