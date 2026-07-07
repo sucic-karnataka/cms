@@ -10,9 +10,9 @@ categories:
   - ಸುದ್ದಿ
 tags: []
 image: https://pub-9e8dfdab94894b3586fae2b60190fd52.r2.dev/2026/06/IMG_4718.jpeg
-image_fit: ''
+image_fit: auto
 image_position: center
-show_in_slider: false
+show_in_slider: true
 aliases:
   - /kn/news/ಪಶ್ಚಿಮ-ಬಂಗಾಳದ-ಬಿಜೆಪಿ-ಸರ್ಕಾರ-ಒಂದರ-ಮೇಲೊಂದರಂತೆ-ಜಾರಿಗೆ-ತರುತ್ತಿರುವ-ಜನವಿರೋಧಿ-ನೀತಿಗಳ-ವಿರುದ್ಧ-11.06.2026ರಂದು-ಕೊಲ್ಕತ್ತಾದಲ್ಲಿ-ಎಸ್-ಯುಸಿಐ-ಸಿ-ಸಂಘಟಿಸಿದ-ಬೃಹತ್-ಪ್ರತಿಭಟನಾ-ಮೆರವಣಿಗೆ/
 ---
