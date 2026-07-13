@@ -822,13 +822,14 @@ main {
     align-items: stretch;
 
     .post-card {
-      aspect-ratio: 1 / 2;
+      aspect-ratio: auto;
       min-height: 0;
     }
 
     .post-card-body {
       min-height: 0;
-      overflow: hidden;
+      overflow: visible;
+      padding: 1.1rem 1.1rem 1rem;
     }
 
     .post-card h3,
@@ -845,7 +846,31 @@ main {
     .post-card-desc {
       flex: 0 1 auto;
       min-height: 0;
-      -webkit-line-clamp: 4;
+      -webkit-line-clamp: 3;
+    }
+
+    @media (max-width: 700px) {
+      .post-card {
+        aspect-ratio: auto;
+      }
+
+      .post-card-body {
+        padding: 1rem;
+      }
+
+      .post-card-desc {
+        -webkit-line-clamp: 4;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .post-card-image-link {
+        aspect-ratio: 4 / 3;
+      }
+
+      .post-card-desc {
+        -webkit-line-clamp: 5;
+      }
     }
   }
 }
