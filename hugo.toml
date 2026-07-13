@@ -57,7 +57,7 @@ cleanDestinationDir = true
   unsafe = true
 
 [params]
-  description = "A production-ready Hugo site built with best practices."
+  description = "Karnataka State"
   [params.social]
     # twitter = ""  # Set your Twitter/X handle here when ready
 
