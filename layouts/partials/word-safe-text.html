@@ -1,0 +1,3 @@
+{{- range $index, $word := findRE `\S+` . -}}
+  {{- if $index }} {{ end -}}<span class="text-word">{{ $word }}</span>
+{{- end -}}

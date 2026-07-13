@@ -73,8 +73,8 @@
       </a>
       {{ end }}
       <div class="month-primary-body">
-        <h2 class="month-primary-title"><a href="{{ $article.RelPermalink }}">{{ $article.Title }}</a></h2>
-        {{ with $article.Description }}<p class="month-primary-desc">{{ . }}</p>{{ end }}
+        <h2 class="month-primary-title"><a href="{{ $article.RelPermalink }}">{{ partial "word-safe-text.html" $article.Title }}</a></h2>
+        {{ with $article.Description }}<p class="month-primary-desc">{{ partial "word-safe-text.html" . }}</p>{{ end }}
         <div class="card-byline">
           <span>{{ math.Max 1 (math.Round (div (countwords $article.Content) 200.0)) }} {{ i18n "min_read" }}</span>
         </div>
@@ -93,8 +93,8 @@
           {{ partial "post-image.html" (dict "page" $card "src" . "width" "600" "alt" $card.Title "class" "post-card-image-link" "href" $card.RelPermalink "loading" "lazy") }}
         {{ end }}
         <div class="post-card-body">
-          <h3><a href="{{ $card.RelPermalink }}">{{ $card.Title }}</a></h3>
-          {{ with $card.Description }}<p class="post-card-desc">{{ . }}</p>{{ end }}
+          <h3><a href="{{ $card.RelPermalink }}">{{ partial "word-safe-text.html" $card.Title }}</a></h3>
+          {{ with $card.Description }}<p class="post-card-desc">{{ partial "word-safe-text.html" . }}</p>{{ end }}
           <div class="card-byline">
             <span>{{ math.Max 1 (math.Round (div (countwords $card.Content) 200.0)) }} {{ i18n "min_read" }}</span>
           </div>

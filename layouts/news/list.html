@@ -47,8 +47,8 @@
         {{ partial "post-image.html" (dict "page" $card "src" . "width" "700" "alt" $card.Title "class" "post-card-image-link" "href" $card.RelPermalink "loading" "lazy") }}
       {{ end }}
       <div class="post-card-body">
-        <h3><a href="{{ $card.RelPermalink }}">{{ $card.Title }}</a></h3>
-        {{ with $card.Description }}<p class="post-card-desc">{{ . }}</p>{{ end }}
+        <h3><a href="{{ $card.RelPermalink }}">{{ partial "word-safe-text.html" $card.Title }}</a></h3>
+        {{ with $card.Description }}<p class="post-card-desc">{{ partial "word-safe-text.html" . }}</p>{{ end }}
         <div class="card-byline">
           <time datetime="{{ $card.Date.Format "2006-01-02" }}">{{ $card.Date.Format "Jan 2, 2006" }}</time>
         </div>

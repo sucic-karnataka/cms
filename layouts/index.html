@@ -40,7 +40,7 @@
         <div class="hero-slide-content">
           <span class="hero-slide-chip">{{ i18n $p.Section | default ($p.Section | title) }}</span>
           <h2 class="hero-slide-title">
-            <a href="{{ $p.RelPermalink }}">{{ $p.Title }}</a>
+            <a href="{{ $p.RelPermalink }}">{{ partial "word-safe-text.html" $p.Title }}</a>
           </h2>
           {{ with $p.Description }}
             <p class="hero-slide-desc">{{ . | truncate 140 }}</p>
@@ -111,8 +111,8 @@
                 {{ partial "post-image.html" (dict "page" $card "src" . "width" "600" "alt" $card.Title "class" "post-card-image-link" "href" $card.RelPermalink "loading" "eager") }}
               {{ end }}
               <div class="post-card-body">
-                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-                {{ with .Description }}<p class="post-card-desc">{{ . }}</p>{{ end }}
+                <h3><a href="{{ .RelPermalink }}">{{ partial "word-safe-text.html" .Title }}</a></h3>
+                {{ with .Description }}<p class="post-card-desc">{{ partial "word-safe-text.html" . }}</p>{{ end }}
                 <div class="card-byline">
                   <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "Jan 2, 2006" }}</time>
                 </div>
@@ -141,8 +141,8 @@
               </a>
               {{ end }}
               <div class="news-row-body">
-                <h3><a href="{{ $n.RelPermalink }}">{{ $n.Title }}</a></h3>
-                {{ with $n.Description }}<p>{{ . | truncate 110 }}</p>{{ end }}
+                <h3><a href="{{ $n.RelPermalink }}">{{ partial "word-safe-text.html" $n.Title }}</a></h3>
+                {{ with $n.Description }}<p>{{ partial "word-safe-text.html" . }}</p>{{ end }}
                 <div class="card-byline">
                   <time datetime="{{ $n.Date.Format "2006-01-02" }}">{{ $n.Date.Format "Jan 2, 2006" }}</time>
                 </div>
@@ -169,8 +169,8 @@
                 {{ partial "post-image.html" (dict "page" $card "src" . "width" "600" "alt" $card.Title "class" "post-card-image-link" "href" $card.RelPermalink "loading" "lazy") }}
               {{ end }}
               <div class="post-card-body">
-                <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
-                {{ with .Description }}<p class="post-card-desc">{{ . }}</p>{{ end }}
+                <h3><a href="{{ .RelPermalink }}">{{ partial "word-safe-text.html" .Title }}</a></h3>
+                {{ with .Description }}<p class="post-card-desc">{{ partial "word-safe-text.html" . }}</p>{{ end }}
                 <div class="card-byline">
                   {{ with .Params.author }}<span>{{ . }}</span>{{ end }}
                 </div>

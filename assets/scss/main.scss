@@ -24,6 +24,11 @@ $nav-color:     var(--color-nav,     #b91c1c);
   hyphens: none;
 }
 
+// Keep each whitespace-delimited word atomic when a line clamp adds an ellipsis.
+.text-word {
+  display: inline-block;
+}
+
 // ─── Skip-to-content link (accessibility) ────────────────────────────────────
 .skip-link {
   position: absolute;
