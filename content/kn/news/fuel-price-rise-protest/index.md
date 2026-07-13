@@ -13,8 +13,6 @@ image: https://pub-9e8dfdab94894b3586fae2b60190fd52.r2.dev/2026/06/IMG_4723.jpeg
 image_fit: auto
 image_position: center
 show_in_slider: false
-aliases:
-  - /kn/news/ಪೆಟ್ರೋಲ್-ಡೀಸೆಲ್-ಅಡುಗೆ-ಅನಿಲ-ಸಿಎನ್-ಜಿ-ಮೊದಲಾದ-ಇಂಧನ-ದರಗಳ-ತೀವ್ರ-ಏರಿಕೆಯ-ವಿರುದ್ಧ-ಎಸ್-ಯುಸಿಐ-ಸಿ-ಪ್ರತಿಭಟನೆ./
 ---
 
 ![](https://pub-9e8dfdab94894b3586fae2b60190fd52.r2.dev/2026/06/IMG_4722.jpeg)

@@ -47,6 +47,9 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
+      - name: Validate content paths
+        run: python scripts/validate_content_paths.py
+
       - name: Build
         run: hugo --minify --environment production
 
