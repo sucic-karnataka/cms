@@ -6,7 +6,7 @@
   var dots    = Array.from(slider.querySelectorAll('.hero-dot'));
   var total   = slides.length;
   var current = 0;
-  var timer;
+  var timer = null;
 
   function goTo(idx) {
     slides[current].classList.remove('is-active');
@@ -42,16 +42,22 @@
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
 
   function startAuto() {
+    if (timer) return;
     timer = setInterval(function () { goTo(current + 1); }, 5000);
   }
 
-  function resetAuto() {
+  function stopAuto() {
     clearInterval(timer);
+    timer = null;
+  }
+
+  function resetAuto() {
+    stopAuto();
     startAuto();
   }
 
   // Pause auto-advance on hover
-  slider.addEventListener('mouseenter', function () { clearInterval(timer); });
+  slider.addEventListener('mouseenter', stopAuto);
   slider.addEventListener('mouseleave', startAuto);
 
   startAuto();
