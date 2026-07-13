@@ -8,7 +8,7 @@ backend:
 media_folder: content/en/articles
 public_folder: /articles
 
-site_url: https://sucic-karnataka.github.io/cms/
+site_url: https://sucic-karnataka.org/
 
 collections:
   - name: articles

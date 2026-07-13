@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /admin/
 Allow: /
 
-Sitemap: https://anand-raj.github.io/cms-hugo-sveltia/sitemap.xml
+Sitemap: https://sucic-karnataka.org/sitemap.xml
