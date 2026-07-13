@@ -60,7 +60,6 @@ cleanDestinationDir = true
   description = "A production-ready Hugo site built with best practices."
   [params.social]
     # twitter = ""  # Set your Twitter/X handle here when ready
-    github  = "anand-raj"
 
 [related]
   threshold    = 60
