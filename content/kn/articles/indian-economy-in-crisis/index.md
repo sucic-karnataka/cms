@@ -14,8 +14,8 @@ tags: []
 image: https://pub-9e8dfdab94894b3586fae2b60190fd52.r2.dev/2026/07/WhatsApp_Image_2026-07-14_at_17.14.22__1_.jpeg
 image_fit: auto
 image_position: center
-show_in_slider: false
-priority: ''
+show_in_slider: true
+priority: primary
 toc: true
 ---
 
