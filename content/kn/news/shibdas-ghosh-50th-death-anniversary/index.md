@@ -3,7 +3,7 @@ title: ಕೊಲ್ಕತ್ತಾ -   ‌‌ಕಾಮ್ರೇಡ್ ಶಿವ�
 slug: shibdas-ghosh-50th-death-anniversary
 date: 2026-08-08T12:39:00+05:30
 lastmod: 2026-08-08T12:39:00+05:30
-draft: true
+draft: false
 description: ''
 author: Admin
 categories:
