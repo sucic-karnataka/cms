@@ -10,7 +10,7 @@ categories:
   - Tech
 tags: []
 image: https://pub-9e8dfdab94894b3586fae2b60190fd52.r2.dev/2026/08/1787708933957-01.jpeg
-image_fit: ''
+image_fit: contain
 image_position: center
 show_in_slider: true
 priority: primary
