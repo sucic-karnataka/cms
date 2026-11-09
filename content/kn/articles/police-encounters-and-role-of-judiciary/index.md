@@ -9,7 +9,7 @@ author: Admin
 categories:
   - Tech
 tags: []
-image: https://pub-9e8dfdab94894b3586fae2b60190fd52.r2.dev/2026/11/201905031027519210_80-rowdies-killed-in-TN-police-encounter-so-far_SECVPF.jpg
+image: https://pub-9e8dfdab94894b3586fae2b60190fd52.r2.dev/2026/11/WhatsApp_Image_2026-11-09_at_16.29.15.jpeg
 image_fit: auto
 image_position: center
 show_in_slider: false
