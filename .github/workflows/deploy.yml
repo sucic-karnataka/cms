@@ -17,6 +17,9 @@ concurrency:
   group: pages
   cancel-in-progress: false
 
+env:
+  HUGO_VERSION: '0.169.0'
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -44,8 +47,51 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest'
+          hugo-version: ${{ env.HUGO_VERSION }}
           extended: true
+
+      - name: Check for newer Hugo release
+        continue-on-error: true
+        timeout-minutes: 1
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          python - <<'PY'
+          import json
+          import os
+          import re
+          import urllib.request
+
+          def version(value):
+              match = re.fullmatch(r"v?(\d+)\.(\d+)\.(\d+)", value)
+              if not match:
+                  raise ValueError("Unexpected release version format")
+              return tuple(map(int, match.groups()))
+
+          try:
+              pinned = os.environ["HUGO_VERSION"]
+              request = urllib.request.Request(
+                  "https://api.github.com/repos/gohugoio/hugo/releases/latest",
+                  headers={
+                      "Accept": "application/vnd.github+json",
+                      "Authorization": "Bearer " + os.environ["GH_TOKEN"],
+                      "User-Agent": "cms-hugo-version-check",
+                  },
+              )
+              with urllib.request.urlopen(request, timeout=15) as response:
+                  latest = json.load(response)["tag_name"]
+              newer = version(latest) > version(pinned)
+              url = "https://github.com/gohugoio/hugo/releases/tag/" + latest
+              message = f"Hugo build pin: {pinned}; latest stable release: {latest}."
+              print(message)
+              if newer:
+                  print(f"::warning title=Hugo upgrade available::{message} Review {url} and test before upgrading. The build remains pinned.")
+              with open(os.environ["GITHUB_STEP_SUMMARY"], "a", encoding="utf-8") as summary:
+                  summary.write(f"### Hugo version check\n{message}\n\n[Release notes]({url})\n")
+          except Exception:
+              # Advisory only: API outages must not block content publishing.
+              print("::warning title=Hugo version check unavailable::Could not check the latest Hugo release. The build remains pinned.")
+          PY
 
       - name: Validate content paths
         run: python scripts/validate_content_paths.py
